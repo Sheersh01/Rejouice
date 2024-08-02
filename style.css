@@ -1,0 +1,470 @@
+@font-face {
+    font-family:nb;
+    src: url(./NBInternationalProBoo.ttf);
+}
+@font-face {
+    font-family: rejoy;
+    src: url(./Rejouice-Headline.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "nb";
+    user-select: none;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  #page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#cursor{
+    height: 7vw;
+    width: 7vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: #fff; */
+    transform: translate(-50%,-50%);
+}
+#cursor h3{
+    font-family: "rejoy";
+    font-weight: 100;
+    opacity: 0.6;
+}
+#cursor2{
+  height: 7vw;
+  width: 7vw;
+  background-color: #00000082;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* color: #fff; */
+  transform: translate(-50%,-50%);
+}
+#cursor2 h3{
+  font-family: "rejoy";
+  font-weight: 100;
+  opacity: 0.6;
+}
+  video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
+  #page1-cont{
+    z-index: 10;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /* background-color: rgba(255, 0, 0, 0.26); */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+nav{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 3vw;
+    width: 100%;
+  }
+  nav h3{
+    font-weight: normal;
+    font-size: 1.4vw;
+}
+nav h4{
+      font-size: 1.4vw;
+    font-weight: normal;
+  }
+  #page1-cont  h1{
+    /* position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,0%); */
+    color: white;
+    font-family: rejoy;
+    font-weight: 100;
+    font-size: 27vw;
+    line-height: 1;
+  }
+  #page1-cont  h1 span{
+    font-family: rejoy;
+    display: inline-block;
+  }
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #FAF8F3;
+    padding: 5vw 3vw;
+}
+#page2-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1vw;
+}
+#page2-top h1{
+    font-family: nb;
+    font-weight: 100;
+    font-size: 1.8vw;
+}
+#page2 .elem h1{
+    font-family: nb;
+    font-weight: 200;
+    font-size: 4.1vw;
+}
+#page3{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FAF8F3;
+   position: relative;
+   padding: 3vw;
+}
+#page3-head{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 16vw;
+margin-bottom: 1vw;
+}
+#page3-head h4{
+font-family: nb;
+font-weight: 100;
+font-size: 1.6vw;
+}
+
+#page3-top h3{
+text-align: center;
+font-family: nb;
+font-weight: 100;
+letter-spacing: 0.1px;
+font-size: 1vw;
+}
+#page3-top h3 span{
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+    padding: 0.5vw 0.8vw;
+    font-size: 0.58vw;
+    font-family: nb;
+}
+#page3-top h1{
+    text-align: center;
+    font-family: nb;
+font-weight: 100;
+letter-spacing: 0.1px;
+font-size: 4vw;
+}
+#page3-elem{
+    width: 100%;
+    height:80vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#page3-elem .box{
+    height: 100%;
+    width: 30%;
+    /* background-color: blue; */
+    position: relative;
+}
+#page3-elem .box video{
+width: 100%;
+height: 100%;
+object-position: center;
+object-fit: cover;
+}
+#page3-elem .box img{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* object-position: center; */
+    object-fit: cover;
+    transition: all ease .6s;
+}
+#page3-elem .box:hover img{
+opacity: 0;
+}
+#page3b{
+  height: 100vh;
+  width: 100%;
+  background-color: #FAF8F3;
+  padding: 5vw 3vw;
+}
+#page3b-top{
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  padding-bottom: 1vw;
+  /* border-bottom: 1px solid black; */
+}
+#page3b-top h1{
+  font-family: nb;
+  font-weight: 100;
+  font-size: 1.8vw;
+}
+#page3b .elem h1{
+  font-family: nb;
+  font-weight: 200;
+  font-size: 4.1vw;
+}
+/* #page4a{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  /* z-index: 0; */
+  /* background-color: transparent; 
+} */
+
+#page4{
+    height: 200vh;
+    width: 100%;
+    position: relative;
+    background-color: #FAF8F3;
+    /* background-color:  black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page4 h1{
+  position: absolute;
+  z-index: 2;
+  font-family: rejoy;
+font-weight: 100;
+font-size: 1.6vw;
+}
+#page4 h1 span{
+/* margin-left:5vw; */
+font-family: rejoy;
+font-weight: 100;
+font-size: 4vw;
+}
+#video-cen{
+/* text-align: center; */
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+color: white;
+font-family: rejoy;
+}
+#page4 video{
+/* height: 100%; */
+scale: 0.7;
+}
+
+#page4 svg{
+    height: 38%;
+    position: absolute;
+    scale: 1.1;
+}
+#page4b{
+  height: 100vh;
+  width: 100%;
+  background-color: #FAF8F3;
+  padding: 5vw 3vw;
+}
+#page4b-top{
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  padding-bottom: 1vw;
+  /* border-bottom: 1px solid black; */
+}
+#page4b-top h1{
+  font-family: nb;
+  font-weight: 100;
+  font-size: 1.8vw;
+}
+#page4b .elem h1{
+  font-family: nb;
+  font-weight: 200;
+  font-size: 4.1vw;
+}
+#page5{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #FAF8F3;
+}
+#page5 h1{
+    font-family: rejoy;
+    font-weight: 100;
+    font-size: 8vw;
+    border-bottom: 1px solid black;
+    width: 96%;
+    margin-left: 2%;
+}
+#swiperdiv{
+    height: 60vh;
+    width: 100%;
+    margin-top: -3%;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    /* z-index: 2;
+    position: absolute;
+    margin-top: -10%; */
+    /* width: 50% !important; */
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#loader h3{
+    font-weight: 100;
+    font-size: 2vw;
+      font-family: rejoy;
+    color: white;
+  }
+  #page6{
+    height: 70vh;
+    width: 100%;
+    background-color: #FAF8F3;
+    padding: 5vw 3vw;
+    display: flex;
+    align-items : center;
+    justify-content:center;
+    /* padding-bottom: 1vw; */
+    flex-direction: column;
+    /* text-align: center; */
+}
+#page6 h3{
+  font-family: nb;
+  font-weight: 100;
+  font-size: 1.2vw;
+}
+#page6 h1{
+  font-family: nb;
+  font-weight: 100;
+  font-size: 4.8vw;
+  border-bottom: 4px solid black;
+  width: fit-content;
+}
+
+  #footer {
+    padding: 2vw 3vw;
+    min-height: 110vh;
+    width: 100%;
+    background-color: black;
+    color: #BBB8B1;
+    font-family: nb;
+   
+  }
+  #foot-top{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+  }
+  #fleft{
+    width: 70%;
+    /* background-color: red; */
+  }
+  #fleft h1{
+    font-weight: 100;
+  }
+  #fleft button{
+    margin-top: 3vw;
+    background-color: black;
+    border-radius: 100px;
+  color: #BBB8B1;
+border: 1px solid #BBB8B1;
+padding: 1.2vw 1.6vw;
+font-weight: 100;
+font-size: 1vw;
+}
+#fleft button:hover{
+  background-color: #BBB8B1;
+  color: black;
+}
+#fryt{
+  width: 30%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+}
+#fryt1 h5{
+  font-weight: 100;
+  font-size: 1.2vw;
+}
+#fryt2 h5{
+  font-weight: 100;
+  font-size: 1.2vw;
+}
+#foot-mid{
+  margin-top: 10vw;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+#foot-mid #fleft h1{
+font-size: 1.2vw;
+color: white;
+}
+#foot-end  h1{
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-family: rejoy;
+  font-weight: 100;
+  font-size: 27vw;
+  line-height: 1;
+}
+#foot-end  h1 span{
+  font-family: rejoy;
+  display: inline-block;
+}
